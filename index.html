@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Report Submission</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" style="width: 350px; height: auto;"> <!-- Logo Image -->
+            <h1>Property Report Submission [ শাহিদ আফ্রিদি ] </h1>
+        </div>
+    </header>
+    
+    
+    <main>
+        <form id="reportForm">
+            <label>Date of Report:</label>
+            <input type="text" id="dateOfReport" placeholder="dd-mm-yyyy" required>
+    
+            <label>Name of Applicant:</label>
+            <input type="text" id="applicantName" placeholder="Type your name here" required>
+    
+            <label>Contact Person Name & Mobile No:</label>
+            <input type="text" id="contactPerson" placeholder="Type name and mobile number" required>
+    
+            <label>Name of Property Owner:</label>
+            <input type="text" id="propertyOwner" placeholder="Type property owner's name" required>
+    
+            <label>Documents provided:</label>
+            <select id="documentProvided" required>
+                <option value="">Select a document</option>
+                <option value="Document1">Deed</option>
+                <option value="Document2">Patta</option>
+            </select>
+    
+            <h1>Property Location Details:</h1>
+            <input type="text" id="propertyAddress" placeholder="Address of the Property" required>
+    
+            <label>Remarks:</label>
+            <textarea id="remarks" placeholder="Enter Remarks"></textarea>
+    
+            <label>Studied on road:</label>
+            <input type="text" id="studiedRoad" placeholder="Type details here">
+    
+            <label>Premises No:</label>
+            <input type="text" id="premisesNo" placeholder="Type premises number">
+    
+            <label>Plot No/ RS or LR:</label>
+            <input type="text" id="plotNo" placeholder="Type plot number">
+    
+            <label>Khatian No:</label>
+            <input type="text" id="khatianNo" placeholder="Type khatian number">
+    
+            <label>JL No:</label>
+            <input type="text" id="jlNo" placeholder="Type JL number">
+    
+            <label>Mouza No:</label>
+            <input type="text" id="mouzaNo" placeholder="Type mouza number">
+    
+            <label>Village & Word No:</label>
+            <input type="text" id="villageWordNo" placeholder="Type village and word number">
+    
+            <label>Post Office:</label>
+            <input type="text" id="postOffice" placeholder="Type post office name">
+    
+            <label>Police Station:</label>
+            <input type="text" id="policeStation" placeholder="Type police station name">
+    
+            <label>District:</label>
+            <input type="text" id="district" placeholder="Type district name">
+    
+            <label>Pin No:</label>
+            <input type="text" id="pinNo" placeholder="Type pin number">
+    
+            <label>State:</label>
+            <select id="state" required>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+    
+            <p style="text-align: center; font-weight: bold;">⬇️</p>
+    
+            <label>Address Matching:</label>
+            <select id="addressMatching" required>
+                <option value="">Select YES or NO</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+            </select>
+    
+            <label>Property Holding Type:</label>
+            <select id="holdingType" required>
+                <option value="">Select Freehold or Leasehold</option>
+                <option value="Freehold">Freehold</option>
+                <option value="Leasehold">Leasehold</option>
+            </select>
+    
+            <label>Marketability:</label>
+            <select id="marketability" required>
+                <option value="">Select Poor, Average, or Good</option>
+                <option value="Poor">Poor</option>
+                <option value="Average">Average</option>
+                <option value="Good">Good</option>
+            </select>
+    
+            <label>Type of the Property:</label>
+            <select id="propertyType" required>
+                <option value="Residential">Flat</option>
+                <option value="Commercial">Independent House</option>
+                <option value="Commercial">Commercial Building</option>
+                <option value="Commercial">Commercial Unit</option>
+                <option value="Commercial">Industrial</option>
+                <option value="Commercial">Plot</option>
+                <option value="Commercial">Commercial Floor</option>
+            </select>
+    
+            <label>Occupancy Status:</label>
+            <select id="occupancyStatus" required>
+                <option value="">Select SORP, SOCP, Rented, or Vacant</option>
+                <option value="SORP">SORP</option>
+                <option value="SOCP">SOCP</option>
+                <option value="Rented">Rented</option>
+                <option value="Vacant">Vacant</option>
+            </select>
+    
+            <label>Locality Name:</label>
+            <input type="text" id="localityName" placeholder="Enter locality name">
+    
+            <label>Landmark Nearby:</label>
+            <input type="text" id="nearbyLandmark" placeholder="Enter nearby landmark">
+    
+            <h1>Four Side Boundaries:</h1>
+            
+            <p style="text-align: center; font-weight: bold;">⬇</p>
+    
+            <label>East:</label>
+            <input type="text" id="eastBoundary" placeholder="Enter East boundary">
+            
+            <label>West:</label>
+            <input type="text" id="westBoundary" placeholder="Enter West boundary">
+            
+            <label>North:</label>
+            <input type="text" id="northBoundary" placeholder="Enter North boundary">
+            
+            <label>South:</label>
+            <input type="text" id="southBoundary" placeholder="Enter South boundary">
+    
+            <label>Latitude / Longitude:</label>
+            <input type="text" id="latLong" placeholder="Enter Latitude / Longitude">
+    
+            <label for="finalRemarks">Remarks:</label>
+            <textarea id="finalRemarks" placeholder="Enter Remarks" rows="4" cols="50"></textarea>
+    
+            <label>Property Map:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+
+    
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

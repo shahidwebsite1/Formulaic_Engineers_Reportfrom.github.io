@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007BFF;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main Container Styles */
+main {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Max width for larger screens */
+    margin: 0 auto;   /* Centering */
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 15px; /* Increased gap for better spacing */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    color: #333; /* Darker color for better readability */
+}
+
+/* Input and Select Styles */
+input, select, textarea {
+    padding: 12px; /* Increased padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Larger font for better readability */
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Button Styles */
+button {
+    background: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 16px; /* Larger font for better visibility */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    main {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    input, select, textarea {
+        font-size: 14px; /* Smaller font for smaller devices */
+    }
+
+    button {
+        font-size: 14px; /* Consistent button size */
+    }
+}
